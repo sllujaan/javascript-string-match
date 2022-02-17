@@ -12,6 +12,7 @@ are permitted: letters may be capitalized, or discarded, but otherwise not chang
 3. (‘BcdEF’,’BCEF’) TRUE (c was uppercased, d was discarded)
 4. (‘BCD’,’BcD’) FALSE (C could not be lowercased)
 
+# Solution:
 
 ```js
 /**
@@ -62,8 +63,8 @@ function match(string1, string2) {
   return "TRUE";
 }
 
-console.log("('ebCde','BCD'): ", match("ebCde", "BCD"));
-console.log("('eCB','ECB'): ", match("eCB", "ECB"));
-console.log("('BcdEF','BCEF'): ", match("BcdEF", "BCEF"));
-console.log("('BCD','BcD'): ", match("BCD", "BcD"));
+console.log("('ebCde','BCD'): ", match("ebCde", "BCD"));    // "TRUE"
+console.log("('eCB','ECB'): ", match("eCB", "ECB"));        // "TRUE"
+console.log("('BcdEF','BCEF'): ", match("BcdEF", "BCEF"));  // "TRUE"
+console.log("('BCD','BcD'): ", match("BCD", "BcD"));        // "FALSE"
 ```
