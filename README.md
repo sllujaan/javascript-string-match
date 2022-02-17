@@ -68,3 +68,5 @@ console.log("('eCB','ECB'): ", match("eCB", "ECB"));        // "TRUE"
 console.log("('BcdEF','BCEF'): ", match("BcdEF", "BCEF"));  // "TRUE"
 console.log("('BCD','BcD'): ", match("BCD", "BcD"));        // "FALSE"
 ```
+
+### Complexity: O(2N)
